@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil de Cliente Potencial</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec, #e8f5e9);
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    animation: fadeDown 1.2s ease;
+}
+
+header h1{
+    font-size:3rem;
+    color:#1976d2;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#555;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    margin:20px 0;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeUp 1.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card h2{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin-top:20px;
+    background: linear-gradient(90deg,#42a5f5,#ec407a);
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.4s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(90deg,#ec407a,#42a5f5);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    font-size:0.9rem;
+}
+
+/* Animaciones */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cliente Potencial</h1>
+    <p>Perfil Estratégico para Desarrollo Comercial</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Información General</h2>
+        <p><strong>Nombre:</strong> Carlos Mendoza</p>
+        <p><strong>Edad:</strong> 32 años</p>
+        <p><strong>Ubicación:</strong> Puebla, México</p>
+        <p><strong>Profesión:</strong> Ingeniero en Sistemas</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Necesidades</h2>
+            <p>Busca soluciones tecnológicas que optimicen su productividad y le permitan automatizar procesos en su negocio.</p>
+        </div>
+
+        <div class="card">
+            <h2>Intereses</h2>
+            <p>Innovación, software empresarial, automatización, herramientas digitales modernas y soluciones prácticas.</p>
+        </div>
+
+        <div class="card">
+            <h2>Puntos de Dolor</h2>
+            <p>Falta de tiempo, procesos manuales repetitivos y herramientas poco eficientes.</p>
+        </div>
+
+        <div class="card">
+            <h2>Objetivos</h2>
+            <p>Mejorar eficiencia operativa, reducir costos y aumentar competitividad mediante tecnología inteligente.</p>
+        </div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+        <h2>Propuesta de Valor</h2>
+        <p>Ofrecer una solución personalizada que automatice sus procesos clave, con soporte técnico continuo y escalabilidad futura.</p>
+        <a href="#" class="btn">Contactar Cliente</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Perfil Profesional de Cliente Potencial | Diseño Moderno y Animado
+</footer>
+
+</body>
+</html>
